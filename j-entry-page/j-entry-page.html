@@ -24,7 +24,7 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	        <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">Residents</a></li>
+	        <li><a href="#">Meet the Residents</a></li>
 	        <li><a href="#">Photos</a></li>
 	        <li><a href="#">Videos</a></li>
 	        <li class="dropdown">
@@ -46,14 +46,38 @@
 
 
 
-  <h1 id=welcome-title>Welcome to J Entry!</h1>
+	<div class="title-div">
+  	<h1 id=welcome-title>Welcome to J Entry!</h1>
+  </div>
 
-  <img id="main-photo" src="/images/yearbook_photo_normal.JPG"/> <br/>
+  <div class="container-fluid">
+  	<div class="row">
+	  	<div class="col-md-2"></div>
+	  	<div class="col-md-8">
+	  		<img id="main-photo" class="img-responsive" src="/images/yearbook_photo_silly.JPG"/>
+	  	</div>
+	  	<div class="col-md-2"></div>
+	  </div>
 
-  {{> hello}}
+	  <div class="row">
+	  	<div class="col-md-2"></div>
+		  <div id="entry-description" class="col-md-8">
+		  	<p>
+		  		J Entry is a friendly and welcoming place where you can always find people to hang out with. We often leave our doors open so that people can stop to talk as they pass by, and there are always people in our lounges p-setting, procrastinating, or just hanging out (or sometimes all of them at once!) in the evenings and until the wee hours of the morning. As one of the smallest entries, we are very close-knit, which provides us not only with a fun place to hang out with friends in our free time, but also a great support network anytime we’re having trouble with something. We try to create a friendly, caring, family-like atmosphere that makes J Entry a place where you can relax, be yourself, and feel at home. J Entry is a place where you can come to have a great time with fun people, but also one where you can find peace and quiet when you need it.
+		  	</p>
+		  	<p>
+					We have weekly study breaks here in J, at which we celebrate the weekend by taking time out to have fun together! Study break traditions include our Thanksgiving potluck, J-Idol, a bowling trip, restaurant outings, tie-dyeing, a hiking trip, our holiday gift exchange, and the Easter piñata, just to name a few. We also have weekly(-ish) brownie nights to take a break during the week, and the magical Birthday Fairy makes us cakes to celebrate our birthdays! Other things our residents enjoy together are movies, food, puzzles, board games, and staying up late hanging out in the lounge.
+		  	</p>
+		  </div>
+	  	<div class="col-md-2"></div>
+		</div>
+	</div>
+
+<!--   {{> hello}}
+ -->
 </body>
 
-<template name="hello">
+<!-- <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
-</template>
+</template> -->
