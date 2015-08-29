@@ -1,12 +1,12 @@
 /* CSS declarations go here */
 
 html {
-	margin: 20px;
+	padding: 20px;
 }
 
 body {
-	color: white;
-	background-color: #080808;
+	color: #DFDFDF;
+	background-color: #303030; /* blue color: #22273F; */
 	padding-top: 30px;
 }
 
