@@ -59,7 +59,7 @@ if (Meteor.isClient) {
         $(".previous").attr('href', newPrevIndex);
         $('.next').attr('href', newNextIndex);
       }
-      if (event.keyCode == 39){ /*right arrow */
+      else if (event.keyCode == 39){ /*right arrow */
         var href = $(".next")[0].href;
         var index = href.substr(href.lastIndexOf('/') + 1);
         var src = $("ul.row li:nth-child("+ index +") img")[0].src;

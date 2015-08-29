@@ -34,7 +34,7 @@ body {
 
 .gallery-list li img {
 	cursor: pointer;
-	max-height: 200px;				/* this is bad and should go away, but responsive images aren't resizing properly :( */
+	max-height: 200px;				/* TODO: this is bad and should go away, but responsive images aren't resizing properly :( */
 	border: 3px solid white;
 	border-radius: 2px;
 }
@@ -48,3 +48,10 @@ body {
 	font-size: 18px;
 	text-align: justify;
 }
+
+@media screen and (min-width: 768px) {
+	#photo-modal .modal-dialog  {
+		width:75%;
+	}
+}
+
