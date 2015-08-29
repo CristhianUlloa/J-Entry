@@ -1,2 +1,2 @@
-# J-Entry
-Website for J-Entry
+# J Entry
+Website for J Entry

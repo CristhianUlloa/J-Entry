@@ -1,1 +1,14 @@
 /* CSS declarations go here */
+
+html {
+	margin: 20px;
+}
+
+body {
+	text-align: center;
+	padding-top: 30px;
+}
+
+#main-photo {
+	width: 85%;
+}
