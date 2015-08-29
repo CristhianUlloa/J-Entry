@@ -34,7 +34,6 @@ body {
 
 .gallery-list li img {
 	cursor: pointer;
-	max-height: 200px;				/* TODO: this is bad and should go away, but responsive images aren't resizing properly :( */
 	border: 3px solid white;
 	border-radius: 2px;
 }
