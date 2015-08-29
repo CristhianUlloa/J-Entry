@@ -20,6 +20,25 @@ body {
 	margin-bottom: 10px;
 }
 
+.gallery-list {
+	padding: 0;
+	margin: 0;
+}
+
+.gallery-list li {
+	list-style: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 25px;
+}
+
+.gallery-list li img {
+	cursor: pointer;
+	max-height: 200px;				/* this is bad and should go away, but responsive images aren't resizing properly :( */
+	border: 3px solid white;
+	border-radius: 2px;
+}
+
 #main-photo {
 	border-radius: 10px;
 	margin-bottom: 15px;

@@ -30,7 +30,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="/">J Entry</a>
+	      <a class="active navbar-brand" href="/">J Entry</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -92,7 +92,34 @@
 </template>
 
 <template name="photos">
-	<h1>hi!</h1>
+	<div class="title-div">
+		<h1>J Entry Photo Gallery</h1>
+	</div>
+	<div class="container">
+	  <ul class="row gallery-list container" id="main-gallery">
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_normal.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_silly.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_normal.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_silly.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_normal.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_silly.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_normal.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_silly.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_normal.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_silly.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_normal.JPG"/></li>
+	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4 img-responsive"><img src="/images/yearbook_photo_silly.JPG"/></li>
+	  </ul>
+	</div>
+
+	<div class="modal fade" id="photo-modal" tabindex="-1" role="dialog" aria-labelledby="photo-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 </template>
 
 
