@@ -7,8 +7,8 @@
 from os import listdir, stat
 from os.path import isfile, join
 
-dirPath = "./j-entry-page/public/images/gallery_pictures"
-allFilePaths = [ "/images/gallery_pictures/"+f for f in listdir(dirPath) if isfile(join(dirPath, f))
+dirPath = "./j-entry-page/public/images/gallery_photos"
+allFilePaths = [ "/images/gallery_photos/"+f for f in listdir(dirPath) if isfile(join(dirPath, f))
              and f != ".DS_Store" ]
 
 #print "Found", len(allFilePaths), "files in the directory."
@@ -17,6 +17,6 @@ allFilePaths = [ "/images/gallery_pictures/"+f for f in listdir(dirPath) if isfi
 allElts = []
 allEltsHTMLString = ""
 for filePath in allFilePaths:
-    newElt = "<li class=\"col-lg-4 col-md-2 col-sm-10 col-xs-10\"><img class=\"img-responsive\" src=\"" + filePath + "\"/></li>"
+    newElt = "<li class=\"col-lg-4 col-md-2 col-sm-12 col-xs-12\"><img class=\"img-responsive\" src=\"" + filePath + "\"/></li>"
     allElts.append(newElt)
     print newElt

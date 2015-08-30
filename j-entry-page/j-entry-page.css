@@ -20,10 +20,36 @@ body {
 	margin-bottom: 10px;
 }
 
+.resident-list {
+	padding: 0;
+	margin: 0;
+}
+
+.resident-list>li {
+	list-style: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 25px;
+}
+
+.bio-info-div {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.bio-info-span {
+	font-weight: normal;
+}
+
+.gallery-list li img {
+	cursor: pointer;
+	border: 3px solid white;
+	border-radius: 2px;
+}
+
 .gallery-list {
 	padding: 0;
 	margin: 0;
-	color: #303030;
 }
 
 .gallery-list li {
@@ -31,6 +57,7 @@ body {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-bottom: 25px;
+	color: #303030;
 }
 
 .gallery-list li img {
