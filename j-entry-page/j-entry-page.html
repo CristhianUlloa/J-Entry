@@ -53,16 +53,16 @@
 
   <div class="container-fluid">
   	<div class="row">
-	  	<div class="col-md-2"></div>
-	  	<div class="col-md-8">
+	  	<div class="col-md-2 col-sm-1 col-xs-1"></div>
+	  	<div class="col-md-8 col-sm-10 col-xs-10">
 	  		<img id="main-photo" class="img-responsive" src="/images/yearbook_photo_silly.JPG"/>
 	  	</div>
-	  	<div class="col-md-2"></div>
+	  	<div class="col-md-2 col-sm-1 col-xs-1"></div>
 	  </div>
 
 	  <div class="row">
-	  	<div class="col-md-2"></div>
-		  <div id="entry-description" class="col-md-8">
+	  	<div class="col-md-2 col-sm-1 col-xs-1"></div>
+		  <div id="entry-description" class="col-md-8 col-sm-10 col-xs-10">
 		  	<p>
 		  		J Entry is a friendly and welcoming place where you can always find people to hang out with. We often leave our doors open so that people can stop to talk as they pass by, and there are always people in our lounges p-setting, procrastinating, or just hanging out (or sometimes all of them at once!) in the evenings and until the wee hours of the morning. As one of the smallest entries, we are very close-knit, which provides us not only with a fun place to hang out with friends in our free time, but also a great support network anytime we’re having trouble with something. We try to create a friendly, caring, family-like atmosphere that makes J Entry a place where you can relax, be yourself, and feel at home. J Entry is a place where you can come to have a great time with fun people, but also one where you can find peace and quiet when you need it.
 		  	</p>
@@ -70,7 +70,7 @@
 					We have weekly study breaks here in J, at which we celebrate the weekend by taking time out to have fun together! Study break traditions include our Thanksgiving potluck, J-Idol, a bowling trip, restaurant outings, tie-dyeing, a hiking trip, our holiday gift exchange, and the Easter piñata, just to name a few. We also have weekly(-ish) brownie nights to take a break during the week, and the magical Birthday Fairy makes us cakes to celebrate our birthdays! Other things our residents enjoy together are movies, food, puzzles, board games, and staying up late hanging out in the lounge.
 		  	</p>
 		  </div>
-	  	<div class="col-md-2"></div>
+	  	<div class="col-md-2 col-sm-1 col-xs-1"></div>
 		</div>
 	</div>
 </template>
@@ -181,18 +181,100 @@
 	</div>
 	<div class="container">
 	  <ul class="row gallery-list" id="main-gallery">
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_normal.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_silly.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_normal.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_silly.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_normal.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_silly.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_normal.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_silly.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_normal.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_silly.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_normal.JPG"/></li>
-	    <li class="col-lg-4 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="/images/yearbook_photo_silly.JPG"/></li>
+			<!-- I AM SORRY FOR WHAT NEEDED TO BE DONE -->
+			<!-- Turns out there's not a nice way I could find to pull in the contents of the directory and populate a template.
+					 So, there's a python script at the top level (photoGalleryFilenameGen.py) that generates this HTML.
+					 YOU MUST RUN THE SCRIPT AND REPLACE THIS SECTION WITH THE PRINTOUT IF YOU CHANGE THE CONTENTS OF GALLERY_PICTURES.
+			-->
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/001_IMG_3759.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/008_IMG_3775.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/026_IMG_7581.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/028_IMG_7584.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/032_IMG_7589.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/038_IMG_3791.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/039_IMG_3794.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/042_IMG_7604.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/047_IMG_7611.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/057_IMG_7639.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/080_IMG_7662.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/094_IMG_7684.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/102_rainforest_cafe_group.jpg"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/103_IMG_7701.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_2759.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_2773.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_2781.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_2814.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_2820.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_2857.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_2896.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_2926.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_2996.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3007.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3057.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3069.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3129.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3140.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3166.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3169.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3214.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3646.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3662.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3672.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3693.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3851.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3952.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_3982.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4081.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4084.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4086.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4098.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4108.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4123.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4154.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4170.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4173.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4192.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4193.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4210.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4223.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4240.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4309.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4348.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4404.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4412.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4418.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4449.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4491.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4513.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4547.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4549.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4550.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4568.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4637.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4734.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4750.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4755.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_4806.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_5249.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_5252.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_5256.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_5258.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_5267.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_5269.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_5278.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_5281.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_7901.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_7930.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_7965.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_7973.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_7984.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_8006.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_8027.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_8042.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_8049.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_8057.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_8127.JPG"/></li>
+			<li class="col-lg-4 col-md-2 col-sm-10 col-xs-10"><img class="img-responsive" src="/images/gallery_pictures/IMG_8136.JPG"/></li>
 	  </ul>
 	</div>
 
