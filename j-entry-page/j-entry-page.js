@@ -19,13 +19,15 @@ if (Meteor.isClient) {
     "click .nav a":function(event, template){
       $(".nav").find(".active").removeClass("active");
       $(event.currentTarget).parent().addClass("active");
+      $('.navbar-collapse').collapse('hide');
     },
 
     "click .navbar-brand":function(event, template){
       //console.log("clicked main");
       $(".nav").find(".active").removeClass("active");
       //$(".nav li")[0].addClass("active");                    // Does not work; should highlight about tab b/c is same.
-    }
+      $('.navbar-collapse').collapse('hide');
+    },
   })
 
   Template.photos.events({
