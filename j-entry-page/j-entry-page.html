@@ -3,24 +3,11 @@
 </head>
 
 <body>
-
  	{{> topnav}}
-<!--   {{> hello}}
- -->
-
-
 </body>
-
-<!-- <template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template> -->
 
 <template name="topnav">
  <nav class="navbar navbar-inverse navbar-fixed-top">
-	  <!-- <div class="container">
-	    ...
-	  </div> -->
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -37,11 +24,11 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	        <li class="active"><a href="/about">About<span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">Meet the Residents</a></li>
-	        <li><a href="#">Entry Traditions</a></li>
+	        <li><a href="/residents">Meet the Residents</a></li>
+	        <li><a href="/traditions">Entry Traditions</a></li>
 	        <li><a href="/photos">Photos</a></li>
-	        <li><a href="#">Videos</a></li>
-	        <li class="dropdown">
+	        <li><a href="/videos">Videos</a></li>
+	        <!-- <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Fun Stuff! <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="#">Favorite Memes</a></li>
@@ -52,7 +39,7 @@
 	            <li role="separator" class="divider"></li>
 	            <li><a href="#">One more separated link</a></li>
 	          </ul>
-	        </li>
+	        </li> -->
 	      </ul>
 	    </div>
 	  </div>
@@ -60,9 +47,6 @@
 </template>
 
 <template name="about">
-	
-
-
 	<div class="title-div">
   	<h1 id=welcome-title>Welcome to J Entry!</h1>
   </div>
@@ -88,6 +72,18 @@
 		  </div>
 	  	<div class="col-md-2"></div>
 		</div>
+	</div>
+</template>
+
+<template name="residents">
+	<div class="title-div">
+		<h1>Meet the Residents of J Entry</h1>
+	</div>
+</template>
+
+<template name="traditions">
+	<div class="title-div">
+		<h1>Our J Entry Traditions</h1>
 	</div>
 </template>
 
@@ -121,5 +117,13 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 </template>
+
+<template name="videos">
+	<div class="title-div">
+		<h1>J Entry Video Gallery</h1>
+	</div>
+</template>
+
+
 
 

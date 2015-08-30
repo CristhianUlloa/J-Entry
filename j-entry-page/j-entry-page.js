@@ -89,6 +89,9 @@ Router.route("/", {
     template: "about"
 });
 Router.route("/about");
+Router.route("/residents");
+Router.route("/traditions");
 Router.route("/photos");
+Router.route("/videos");
 
 
