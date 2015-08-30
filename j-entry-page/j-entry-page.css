@@ -32,6 +32,12 @@ body {
 	margin-bottom: 25px;
 }
 
+.resident-list li img {
+	border: 3px solid white;
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+
 .bio-info-div {
 	font-size: 1em;
 	font-weight: bold;
@@ -39,11 +45,6 @@ body {
 
 .bio-info-span {
 	font-weight: normal;
-}
-
-.resident-list li img {
-	border: 3px solid white;
-	border-radius: 2px;
 }
 
 .gallery-list {
@@ -83,7 +84,7 @@ body {
 
 @media screen and (max-width: 767px) {
 	#entry-description {
-		font-size: 3em;
+		font-size: 2em;
 	}
 	#photo-modal .modal-dialog  {
 		width:auto;
