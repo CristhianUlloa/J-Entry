@@ -22,7 +22,7 @@ if (Meteor.isClient) {
     },
 
     "click .navbar-brand":function(event, template){
-      console.log("clicked main");
+      //console.log("clicked main");
       $(".nav").find(".active").removeClass("active");
       //$(".nav li")[0].addClass("active");                    // Does not work; should highlight about tab b/c is same.
     }
@@ -85,6 +85,7 @@ if (Meteor.isServer) {
   });*/
 }
 
+// Routes for site navigation
 Router.route("/", {
     template: "about"
 });
