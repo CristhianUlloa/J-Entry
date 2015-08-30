@@ -41,8 +41,7 @@ body {
 	font-weight: normal;
 }
 
-.gallery-list li img {
-	cursor: pointer;
+.resident-list li img {
 	border: 3px solid white;
 	border-radius: 2px;
 }
