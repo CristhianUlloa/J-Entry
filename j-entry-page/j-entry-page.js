@@ -15,14 +15,18 @@ if (Meteor.isClient) {
     }
   });*/
 
-// Trying to fix top nav behavior
-/*  Template.topnav.events({
+  Template.topnav.events({
     "click .nav a":function(event, template){
-      console.log("clicked a thing");
-      template.$(".active").removeClass(active);                // Does not work from here
-      event.currentTarget.addClass("active");
+      $(".nav").find(".active").removeClass("active");
+      $(event.currentTarget).parent().addClass("active");
+    },
+
+    "click .navbar-brand":function(event, template){
+      console.log("clicked main");
+      $(".nav").find(".active").removeClass("active");
+      //$(".nav li")[0].addClass("active");                    // Does not work; should highlight about tab b/c is same.
     }
-  });*/
+  })
 
   Template.photos.events({
     "click .gallery-list li img":function(event, template){
@@ -87,21 +91,4 @@ Router.route("/", {
 Router.route("/about");
 Router.route("/photos");
 
-// $(".nav a").on("click", function(){
-//    $(".nav").find(".active").removeClass("active");
-//    $(this).parent().addClass("active");
-// });
 
-/*$(document).ready(function(){
-  $('li img').on('click',function(){
-    var src = $(this).attr('src');
-    var img = '<img src="' + src + '" class="img-responsive"/>';
-    $('#photo-modal').modal();
-    $('#photo-modal').on('shown.bs.modal', function(){
-      $('#photo-modal .modal-body').html(img);
-    });
-    $('#photo-modal').on('hidden.bs.modal', function(){
-      $('#photo-modal .modal-body').html('');
-    });
-  });
-})*/
