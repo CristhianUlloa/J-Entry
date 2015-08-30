@@ -59,7 +59,7 @@ if (Meteor.isClient) {
 
         var newPrevIndex = Math.max(1, parseInt(index) - 1);
         var newNextIndex = Math.min($("#main-gallery li").length, parseInt(newPrevIndex) + 2);
-         
+
         $(".previous").attr('href', newPrevIndex);
         $('.next').attr('href', newNextIndex);
       }
@@ -71,7 +71,7 @@ if (Meteor.isClient) {
 
         var newPrevIndex = Math.max(1, parseInt(index) - 1);
         var newNextIndex = Math.min($("#main-gallery li").length, parseInt(newPrevIndex) + 2);
-         
+
         $(".previous").attr('href', newPrevIndex);
         $('.next').attr('href', newNextIndex);
       }
@@ -93,6 +93,4 @@ Router.route("/about");
 Router.route("/residents");
 Router.route("/traditions");
 Router.route("/photos");
-Router.route("/videos");
-
-
+// Router.route("/videos");
