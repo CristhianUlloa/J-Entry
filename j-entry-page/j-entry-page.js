@@ -72,8 +72,10 @@ if (Meteor.isServer) {
   });*/
 }
 
+
+
 // Routes for site navigation
-// This is how routing works: http://meteortips.com/second-meteor-tutorial/iron-router-part-1/
+// This is how routing works with Iron Router: http://meteortips.com/second-meteor-tutorial/iron-router-part-1/
 Router.route("/", {
     template: "about"
 });
@@ -82,3 +84,18 @@ Router.route("/residents");
 Router.route("/traditions");
 Router.route("/photos");
 // Router.route("/videos");
+
+// Hooks to execute before loading content when a new route is used.
+// To learn, see: http://www.manuel-schoebel.com/blog/meteorjs-iron-router-filters-before-and-after-hooks
+var IR_BeforeHooks = {
+  // Scroll to the top of the page
+  // Use: global
+  scrollUp: function() {
+      $('body,html').scrollTop(0);
+      this.next();
+  },
+}
+// Scroll to the top any time a new route is used.
+Router.onBeforeAction(IR_BeforeHooks.scrollUp);
+
+
