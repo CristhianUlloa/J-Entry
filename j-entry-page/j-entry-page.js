@@ -1,19 +1,4 @@
 if (Meteor.isClient) {
-/*  // counter starts at 0
-  Session.setDefault('counter', 0);
-
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
-
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });*/
 
   Template.topnav.events({
     "click .nav a":function(event, template){
@@ -88,6 +73,7 @@ if (Meteor.isServer) {
 }
 
 // Routes for site navigation
+// This is how routing works: http://meteortips.com/second-meteor-tutorial/iron-router-part-1/
 Router.route("/", {
     template: "about"
 });
