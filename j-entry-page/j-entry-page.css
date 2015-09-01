@@ -10,6 +10,19 @@ body {
 	padding-top: 30px;
 }
 
+.resident_photo {
+    display: inline-block;
+   
+}
+
+.resident_photo img:hover {
+    opacity: .5;
+}
+
+.resident_info {
+  display:none;
+}
+
 .title-div {
 	text-align: center;
 }
@@ -79,6 +92,10 @@ body {
 		font-size: 18px;
 		text-align: justify;
 	}
+}
+
+.modal-content {
+  background-color: #333333;
 }
 
 

@@ -15,6 +15,39 @@ if (Meteor.isClient) {
     },
   })
 
+  Template.residents.events({
+    "click .resident_photo img":function(event, template) {
+      var parent = $(event.currentTarget).parent("div").parent("div");
+      var childNodes = parent.childNodes;
+      var children = parent.children();
+
+      // console.log('children: ');
+      // console.log(children);
+
+      var resInfo = children[3];
+
+      // console.log('parent: ');
+      // console.log(parent);
+      // console.log(childNodes);
+      // console.log(children);
+      console.log('resInfo: ' + resInfo);
+
+      var htmlCode = $(resInfo).html();
+      // console.log('html code: ' + htmlCode);
+
+      var html = "";
+      html += htmlCode;
+
+      $('#resident-modal').modal();
+      $("#resident-modal").on("shown.bs.modal", function(){
+        $("#resident-modal .modal-body").html(html);
+      });
+      $("#resident-modal").on("hidden.bs.modal", function(){
+        $("#resident-modal .modal-body").html("");
+      });
+    }
+  })
+  
   Template.photos.events({
     "click .gallery-list li img":function(event, template){
       var src = event.currentTarget.src;
