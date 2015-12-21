@@ -15,13 +15,15 @@ body {
    
 }
 
-.resident_photo img:hover {
+/*FOR RESIDENT MODALS */
+/*.resident_photo img:hover {
     opacity: .5;
-}
+}*/
 
-.resident_info {
+/*FOR RESIDENT MODALS */
+/*.resident_info {
   display:none;
-}
+}*/
 
 .title-div {
 	text-align: center;
