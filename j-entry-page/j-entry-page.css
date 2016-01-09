@@ -10,10 +10,11 @@ body {
 	padding-top: 30px;
 }
 
-.resident_photo {
+/*removed to make resident photos look ok in FF*/
+/*.resident_photo {
     display: inline-block;
    
-}
+}*/
 
 /*FOR RESIDENT MODALS */
 /*.resident_photo img:hover {
