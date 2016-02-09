@@ -17,6 +17,7 @@ allFilePaths = [ "/images/gallery_photos/"+f for f in listdir(dirPath) if isfile
 allElts = []
 allEltsHTMLString = ""
 for filePath in allFilePaths:
-    newElt = "<li class=\"col-lg-4 col-md-2 col-sm-12 col-xs-12\"><img class=\"img-responsive\" src=\"" + filePath + "\"/></li>"
+	# removed : src=\"" + filePath + "\" from below
+    newElt = "<li class=\"col-lg-4 col-md-2 col-sm-12 col-xs-12\"><img class=\"img-responsive lazy\" src=\"/images/loading_img/ajax-loader.gif\" data-src=\"" + filePath + "\"  /></li>"
     allElts.append(newElt)
     print newElt

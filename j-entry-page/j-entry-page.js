@@ -1,5 +1,6 @@
 if (Meteor.isClient) {
 
+
   Template.topnav.events({
     "click .nav a":function(event, template){
       $(".nav").find(".active").removeClass("active");

@@ -86,6 +86,11 @@ body {
 	margin-bottom: 15px;
 }
 
+#lazy {
+  opacity:0;
+  transition: opacity .3s ease-in;
+}
+
 @media screen and (min-width: 768px) {
 	#photo-modal .modal-dialog  {
 		width:70%;
