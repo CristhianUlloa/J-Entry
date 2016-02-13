@@ -91,7 +91,7 @@ body {
   transition: opacity .3s ease-in;
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
 	#photo-modal .modal-dialog  {
 		width:70%;
 	}
@@ -105,7 +105,7 @@ body {
 .modal-content {
   background-color: #333333;
 }
-
+*/
 
 
 
