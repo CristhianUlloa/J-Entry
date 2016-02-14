@@ -10,18 +10,21 @@ body {
 	padding-top: 30px;
 }
 
-.resident_photo {
+/*removed to make resident photos look ok in FF*/
+/*.resident_photo {
     display: inline-block;
    
-}
+}*/
 
-.resident_photo img:hover {
+/*FOR RESIDENT MODALS */
+/*.resident_photo img:hover {
     opacity: .5;
-}
+}*/
 
-.resident_info {
+/*FOR RESIDENT MODALS */
+/*.resident_info {
   display:none;
-}
+}*/
 
 .title-div {
 	text-align: center;
@@ -83,7 +86,12 @@ body {
 	margin-bottom: 15px;
 }
 
-@media screen and (min-width: 768px) {
+#lazy {
+  opacity:0;
+  transition: opacity .3s ease-in;
+}
+
+/*@media screen and (min-width: 768px) {
 	#photo-modal .modal-dialog  {
 		width:70%;
 	}
@@ -97,7 +105,7 @@ body {
 .modal-content {
   background-color: #333333;
 }
-
+*/
 
 
 

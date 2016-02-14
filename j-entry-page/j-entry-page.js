@@ -1,5 +1,6 @@
 if (Meteor.isClient) {
 
+
   Template.topnav.events({
     "click .nav a":function(event, template){
       $(".nav").find(".active").removeClass("active");
@@ -15,27 +16,27 @@ if (Meteor.isClient) {
     },
   })
 
-  Template.residents.events({
-    "click .resident_photo img":function(event, template) {
-      var parent = $(event.currentTarget).parent("div").parent("div");
-      var index = parent.parent("li").index();
-      var children = parent.children();
-      var resInfo = children[3];
-      var htmlCode = $(resInfo).html();
-      var html = "";
-      html += htmlCode;
-      html += '<div style="display:none;">';
-      html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
-      html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
-      html += '</div>';
-      $('#resident-modal').modal();
-      $("#resident-modal").on("shown.bs.modal", function(){
-        $("#resident-modal .modal-body").html(html);
-      });
-      $("#resident-modal").on("hidden.bs.modal", function(){
-        $("#resident-modal .modal-body").html("");
-      });
-    }
+  // Template.residents.events({
+  //   "click .resident_photo img":function(event, template) {
+  //     var parent = $(event.currentTarget).parent("div").parent("div");
+  //     var index = parent.parent("li").index();
+  //     var children = parent.children();
+  //     var resInfo = children[3];
+  //     var htmlCode = $(resInfo).html();
+  //     var html = "";
+  //     html += htmlCode;
+  //     html += '<div style="display:none;">';
+  //     html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
+  //     html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
+  //     html += '</div>';
+  //     $('#resident-modal').modal();
+  //     $("#resident-modal").on("shown.bs.modal", function(){
+  //       $("#resident-modal .modal-body").html(html);
+  //     });
+  //     $("#resident-modal").on("hidden.bs.modal", function(){
+  //       $("#resident-modal .modal-body").html("");
+  //     });
+  //   }
 
     // "keydown":function(event, template){
     //   if (event.keyCode == 37){ /*left arrow */
@@ -112,7 +113,8 @@ if (Meteor.isClient) {
     //     $('.next').attr('href', newNextIndex);
     //   }
     // }
-  })
+    // 
+  // })
   
   Template.photos.events({
     "click .gallery-list li img":function(event, template){
